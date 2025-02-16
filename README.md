@@ -1,7 +1,7 @@
-React
-TypeScript
-ESLint
-Prettier
-TailwindCSS
-Storybook
-Shadcn
+- [x] React
+- [x] TypeScript
+- [x] ESLint
+- [ ] Prettier
+- [x] TailwindCSS
+- [ ] Storybook
+- [ ] Shadcn
