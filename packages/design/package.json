@@ -3,7 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    "./components/*": "./src/components/*",
+    "./components/ui/*": "./src/components/ui/*",
+    "./components/ui/button": "./src/components/ui/button.tsx"
+  },
   "imports": {
+    "#@/theme.css": "./src/theme.css",
     "#@/components/*": "./src/components/*",
     "#@/lib/utils": "./src/lib/utils.ts",
     "#@/components/ui/*": "./src/components/ui/*",
