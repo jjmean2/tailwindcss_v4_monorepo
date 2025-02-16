@@ -10,6 +10,9 @@ importers:
 
   apps/my-next-app:
     dependencies:
+      '@repo/design':
+        specifier: workspace:^
+        version: link:../../packages/design
       '@tailwindcss/postcss':
         specifier: ^4.0.6
         version: 4.0.6

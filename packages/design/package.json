@@ -1,12 +1,14 @@
 {
-  "name": "design",
+  "name": "@repo/design",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "exports": {
     "./components/*": "./src/components/*",
     "./components/ui/*": "./src/components/ui/*",
-    "./components/ui/button": "./src/components/ui/button.tsx"
+    "./components/ui/button": "./src/components/ui/button.tsx",
+    "./components/ui/dialog": "./src/components/ui/dialog.tsx",
+    "./theme.css": "./src/theme.css"
   },
   "imports": {
     "#@/theme.css": "./src/theme.css",

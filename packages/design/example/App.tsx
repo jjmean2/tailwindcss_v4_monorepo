@@ -1,4 +1,4 @@
-import { Button } from "design/components/ui/button";
+import { Button } from "@repo/design/components/ui/button";
 
 function App() {
   return (
