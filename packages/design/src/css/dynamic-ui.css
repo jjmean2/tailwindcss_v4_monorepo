@@ -1,0 +1,4 @@
+@source './safelist-dynamic-ui.txt';
+
+@custom-variant pc (.privia-pc &);
+@custom-variant mobile (.privia-mobile &);

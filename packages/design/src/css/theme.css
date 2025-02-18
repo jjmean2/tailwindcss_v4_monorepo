@@ -1,0 +1,202 @@
+/* flight-design */
+@theme {
+  --spacing: 4px;
+  /* typography */
+  --text-*: initial;
+  --text-h1: 1.5rem;
+  --text-h1--line-height: 1.5;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 1.25rem;
+  --text-h2--line-height: 1.5;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 1.125rem;
+  --text-h3--line-height: 1.5;
+  --text-h3--font-weight: 700;
+
+  --text-h4: 1rem;
+  --text-h4--line-height: 1.5;
+  --text-h4--font-weight: 700;
+
+  --text-h5: 0.875rem;
+  --text-h5--line-height: 1.5;
+  --text-h5--font-weight: 700;
+
+  --text-h6: 0.813rem;
+  --text-h6--line-height: 1.5;
+  --text-h6--font-weight: 700;
+
+  --text-bold12: 0.75rem;
+  --text-bold12--line-height: 1.5;
+  --text-bold12--font-weight: 700;
+
+  --text-bold11: 0.688rem;
+  --text-bold11--line-height: 1.5;
+  --text-bold11--font-weight: 700;
+
+  --text-bold10: 0.625rem;
+  --text-bold10--line-height: 1.5;
+  --text-bold10--font-weight: 700;
+
+  --text-body1: 1rem;
+  --text-body1--line-height: 1.5;
+  --text-body1--font-weight: 500;
+
+  --text-body2: 0.875rem;
+  --text-body2--line-height: 1.5;
+  --text-body2--font-weight: 500;
+
+  --text-body3: 0.813rem;
+  --text-body3--line-height: 1.5;
+  --text-body3--font-weight: 500;
+
+  --text-body4: 0.75rem;
+  --text-body4--line-height: 1.5;
+  --text-body4--font-weight: 500;
+
+  --text-body5: 0.688rem;
+  --text-body5--line-height: 1.5;
+  --text-body5--font-weight: 500;
+
+  --text-body6: 0.625rem;
+  --text-body6--line-height: 1.5;
+  --text-body6--font-weight: 500;
+
+  --text-body7: 0.563rem;
+  --text-body7--line-height: 1.5;
+  --text-body7--font-weight: 500;
+
+  --text-body8: 0.5rem;
+  --text-body8--line-height: 1.5;
+  --text-body8--font-weight: 500;
+
+  --text-caption2: 0.875rem;
+  --text-caption2--line-height: 1.5;
+  --text-caption2--font-weight: 400;
+
+  --text-caption3: 0.813rem;
+  --text-caption3--line-height: 1.5;
+  --text-caption3--font-weight: 400;
+
+  --text-caption4: 0.75rem;
+  --text-caption4--line-height: 1.5;
+  --text-caption4--font-weight: 400;
+
+  --text-caption5: 0.688rem;
+  --text-caption5--line-height: 1.5;
+  --text-caption5--font-weight: 400;
+
+  --text-caption6: 0.625rem;
+  --text-caption6--line-height: 1.5;
+  --text-caption6--font-weight: 400;
+
+  --text-caption7: 0.563rem;
+  --text-caption7--line-height: 1.5;
+  --text-caption7--font-weight: 400;
+
+  --text-caption8: 0.5rem;
+  --text-caption8--line-height: 1.5;
+  --text-caption8--font-weight: 400;
+
+  /* color */
+  --color-*: initial;
+  --color-privia-100: #e93a84;
+  --color-privia-10: #fce7f0;
+  --color-privia-5: #fef5f9;
+
+  --color-flight-100: #2f97ff;
+  --color-flight-10: #e6f3ff;
+  --color-flight-5: #f5faff;
+
+  --color-grey-100: #2f2c45;
+  --color-grey-60: #68667c;
+  --color-grey-30: #a5a3b3;
+  --color-grey-20: #cac9d2;
+  --color-grey-10: #e6e5ea;
+  --color-grey-5: #f5f6f8;
+  --color-grey-3: #fbfcfd;
+
+  --color-greyOpacity-80: rgba(47, 44, 69, 0.8);
+  --color-greyOpacity-60: rgba(47, 44, 69, 0.6);
+  --color-greyOpacity-40: rgba(47, 44, 69, 0.4);
+  --color-greyOpacity-20: rgba(47, 44, 69, 0.2);
+  --color-greyOpacity-12: rgba(47, 44, 69, 0.12);
+  --color-greyOpacity-10: rgba(47, 44, 69, 0.1);
+  --color-greyOpacity-5: rgba(47, 44, 69, 0.05);
+  --color-greyOpacity-3: rgba(47, 44, 69, 0.03);
+
+  --color-white-100: rgba(255, 255, 255, 1);
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-5: rgba(255, 255, 255, 0.05);
+
+  --color-iconic-warningRed100: #ff625f;
+  --color-iconic-warningRed10: #ffecec;
+  --color-iconic-positiveGreen100: #24cbb5;
+  --color-iconic-positiveGreen10: #e5f9f6;
+  --color-iconic-positiveGreen5: #f4fcfb;
+  --color-iconic-hyundaiCardBlack: #000000;
+  --color-iconic-kakaoYellow: #fee500;
+
+  --color-badge-rightPurple: #a967fd;
+  --color-badge-deepPurple: #7755ff;
+  --color-badge-orange: #ff8f50;
+  --color-badge-pink: #ff68a8;
+  --color-badge-yellow: #ffc148;
+  --color-badge-blue: #477bff;
+  --color-badge-cornBlue5: #f8f8ff;
+  --color-badge-cornBlue100: #7479fe;
+  --color-badge-prestigeRed5: #fff4f5;
+  --color-badge-prestigeRed100: #f62c3d;
+
+  /* background-image */
+  --background-image-180deg0to24to48: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --background-image-180deg0to56: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 56%
+  );
+  --background-image-180deg0to24to48: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 24%,
+    rgba(255, 255, 255, 1) 48%
+  );
+
+  --shadow-dropdown: 0px 4px 8px 0px #2f2c451f;
+  /* inset과 outset shadow 설정을 구분 */
+  --inset-shadow-bannerItem: inset 0 0 0 1px rgba(47, 44, 69, 0.12);
+}
+
+@theme inline {
+  /* html 엘리먼트의 font-family에 --font-noto 변수가 정의되어 있어야 함 */
+  /* nextjs의 경우, next/font에서 얻은 상수를 <html class="...">에 붙이면 됨  */
+  --font-sans: var(--font-noto), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-password: var(--next-font-password), var(--font-noto);
+}
+
+@utility hide-scrollbar {
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .blurred-overlay {
+    background-color: var(--color-greyOpacity-40);
+    backdrop-filter: blur(0.5rem);
+  }
+}
