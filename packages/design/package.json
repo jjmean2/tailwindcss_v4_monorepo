@@ -8,21 +8,30 @@
     "./components/ui/*": "./src/components/ui/*",
     "./components/ui/button": "./src/components/ui/button.tsx",
     "./components/ui/dialog": "./src/components/ui/dialog.tsx",
-    "./theme.css": "./src/theme.css"
+    "./config/*": "./src/config/*.ts",
+    "./lib/*.": "./src/lib/*.ts",
+    "./assets/*": "./src/assets/*",
+    "./css": "./src/css/index.css",
+    "./css/*.css": "./src/css/*.css",
+    "./css/index.css": null
   },
   "imports": {
-    "#@/theme.css": "./src/theme.css",
+    "#@/css": "./src/css/index.css",
+    "#@/css/*.css": "./src/css/*.css",
+    "#@/css/index.css": null,
     "#@/components/*": "./src/components/*",
     "#@/lib/utils": "./src/lib/utils.ts",
     "#@/components/ui/*": "./src/components/ui/*",
     "#@/lib/*": "./src/lib/*",
-    "#@/hooks/*": "./src/hooks/*"
+    "#@/hooks/*": "./src/hooks/*",
+    "#@/*": "./src/*"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "type-check": "tsc --noEmit",
     "add-component": "pnpm dlx shadcn@canary add",
     "postadd-component": "rsync -av -remove-source-files '#@/' src/ && rm -rf '#@/'"
   },
@@ -36,7 +45,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss": "^4.0.6",
+    "tailwindcss": "^4.0.7",
     "tailwindcss-animate": "^1.0.7",
     "vite-plugin-svgr": "^4.3.0"
   },

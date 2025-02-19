@@ -2,7 +2,7 @@
 @theme {
   --spacing: 4px;
   /* typography */
-  --text-*: initial;
+  /* --text-*: initial; */
   --text-h1: 1.5rem;
   --text-h1--line-height: 1.5;
   --text-h1--font-weight: 700;
@@ -100,7 +100,7 @@
   --text-caption8--font-weight: 400;
 
   /* color */
-  --color-*: initial;
+  /* --color-*: initial; */
   --color-privia-100: #e93a84;
   --color-privia-10: #fce7f0;
   --color-privia-5: #fef5f9;
@@ -183,6 +183,19 @@
   --font-password: var(--next-font-password), var(--font-noto);
 }
 
+@layer components {
+  .blurred-overlay {
+    background-color: var(--color-greyOpacity-40);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+      var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+      var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+      var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+      var(--tw-backdrop-sepia);
+
+    --tw-backdrop-blur: blur(0.5rem);
+  }
+}
+
 @utility hide-scrollbar {
   /* IE and Edge */
   -ms-overflow-style: none;
@@ -191,12 +204,5 @@
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
-  }
-}
-
-@layer components {
-  .blurred-overlay {
-    background-color: var(--color-greyOpacity-40);
-    backdrop-filter: blur(0.5rem);
   }
 }
