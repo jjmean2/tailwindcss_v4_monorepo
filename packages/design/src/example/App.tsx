@@ -1,4 +1,4 @@
-import { Button } from "@repo/design/components/ui/button";
+import { Button } from "#@/components/ui/button/button.tsx";
 import IcReact from "@repo/design/assets/react.svg?react";
 
 function App() {

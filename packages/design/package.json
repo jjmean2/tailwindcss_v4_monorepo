@@ -6,8 +6,8 @@
   "exports": {
     "./components/*": "./src/components/*",
     "./components/ui/*": "./src/components/ui/*",
-    "./components/ui/button": "./src/components/ui/button.tsx",
-    "./components/ui/dialog": "./src/components/ui/dialog.tsx",
+    "./components/ui/button": "./src/components/ui/button/index.tsx",
+    "./dialog": "./src/components/ui/dialog/index.ts",
     "./config/*": "./src/config/*.ts",
     "./lib/*.": "./src/lib/*.ts",
     "./assets/*": "./src/assets/*",

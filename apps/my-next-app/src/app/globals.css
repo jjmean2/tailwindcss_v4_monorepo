@@ -1,4 +1,4 @@
 @import "tailwindcss";
-@import "@repo/design/theme.css";
+@import "@repo/design/css";
 
 @source "../../node_modules/@repo/design/src";
