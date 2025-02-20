@@ -1,10 +1,106 @@
-import { LitElement, css, html } from "lit";
+import { LitElement, html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import litLogo from "./assets/lit.svg";
 import viteLogo from "/vite.svg";
-import ace from "./index.css?inline";
+import styles from "./my-element.css?inline";
 
-console.log("ace", ace);
+console.log("styles:", styles.split("\n").slice(-150).join("\n"));
+const sheet = new CSSStyleSheet();
+sheet.replaceSync(`@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}`);
+// document.adoptedStyleSheets.push(sheet);
+const style = document.createElement("style");
+style.innerText = `@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}`;
+// document.head.appendChild(style);
 
 /**
  * An example element.
@@ -37,7 +133,7 @@ export class MyElement extends LitElement {
         </a>
       </div>
       <slot></slot>
-      <div class="card bg-red-500">
+      <div class="card border border-red-500">
         <button @click=${this._onClick} part="button">
           count is ${this.count}
         </button>
@@ -50,78 +146,79 @@ export class MyElement extends LitElement {
     this.count++;
   }
 
-  static styles = css`
-    :host {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: center;
-    }
+  static styles = unsafeCSS(styles);
+  // static styles = css`
+  //   :host {
+  //     max-width: 1280px;
+  //     margin: 0 auto;
+  //     padding: 2rem;
+  //     text-align: center;
+  //   }
 
-    .logo {
-      height: 6em;
-      padding: 1.5em;
-      will-change: filter;
-      transition: filter 300ms;
-    }
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
-    }
-    .logo.lit:hover {
-      filter: drop-shadow(0 0 2em #325cffaa);
-    }
+  //   .logo {
+  //     height: 6em;
+  //     padding: 1.5em;
+  //     will-change: filter;
+  //     transition: filter 300ms;
+  //   }
+  //   .logo:hover {
+  //     filter: drop-shadow(0 0 2em #646cffaa);
+  //   }
+  //   .logo.lit:hover {
+  //     filter: drop-shadow(0 0 2em #325cffaa);
+  //   }
 
-    .card {
-      padding: 2em;
-    }
+  //   .card {
+  //     padding: 2em;
+  //   }
 
-    .read-the-docs {
-      color: #888;
-    }
+  //   .read-the-docs {
+  //     color: #888;
+  //   }
 
-    ::slotted(h1) {
-      font-size: 3.2em;
-      line-height: 1.1;
-    }
+  //   ::slotted(h1) {
+  //     font-size: 3.2em;
+  //     line-height: 1.1;
+  //   }
 
-    a {
-      font-weight: 500;
-      color: #646cff;
-      text-decoration: inherit;
-    }
-    a:hover {
-      color: #535bf2;
-      color: red;
-    }
+  //   a {
+  //     font-weight: 500;
+  //     color: #646cff;
+  //     text-decoration: inherit;
+  //   }
+  //   a:hover {
+  //     color: #535bf2;
+  //     color: red;
+  //   }
 
-    button {
-      border-radius: 8px;
-      border: 1px solid transparent;
-      padding: 0.6em 1.2em;
-      font-size: 1em;
-      font-weight: 500;
-      font-family: inherit;
-      background-color: #1a1a1a;
-      cursor: pointer;
-      transition: border-color 0.25s;
-    }
-    button:hover {
-      border-color: #646cff;
-    }
-    button:focus,
-    button:focus-visible {
-      outline: 4px auto -webkit-focus-ring-color;
-    }
+  //   button {
+  //     border-radius: 8px;
+  //     border: 1px solid transparent;
+  //     padding: 0.6em 1.2em;
+  //     font-size: 1em;
+  //     font-weight: 500;
+  //     font-family: inherit;
+  //     background-color: #1a1a1a;
+  //     cursor: pointer;
+  //     transition: border-color 0.25s;
+  //   }
+  //   button:hover {
+  //     border-color: #646cff;
+  //   }
+  //   button:focus,
+  //   button:focus-visible {
+  //     outline: 4px auto -webkit-focus-ring-color;
+  //   }
 
-    @media (prefers-color-scheme: light) {
-      a:hover {
-        color: #747bff;
-      }
-      button {
-        background-color: #f9f9f9;
-      }
-    }
-  `;
+  //   @media (prefers-color-scheme: light) {
+  //     a:hover {
+  //       color: #747bff;
+  //     }
+  //     button {
+  //       background-color: #f9f9f9;
+  //     }
+  //   }
+  // `;
 }
 
 declare global {
